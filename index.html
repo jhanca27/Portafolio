@@ -11,15 +11,19 @@
 <body>
     <header class="header">
         <a href="#" class="logo">Jhan Carlo</a>
+        <i class='bx bx-menu' id="menu"></i>
         <nav class="navbar">
-            <a href="#" class="active">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">SERVICE</a>
+            <a href="#home" >HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#service">SERVICE</a>
             <a href="#">PORTAFOLIO</a>
             <a href="#">CONTACT</a>
         </nav>
     </header>
-    <section class="home">
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="img/foto-jhan.png" alt="">
+        </div>
         <div class="home-wrapper">
             <div class="home-content">
                 <h1>hi, I'am Jhan Carlo</h1>
@@ -35,13 +39,33 @@
                 <a href=""><i class='bx bxl-github'></i></a>
                 <a href=""><i class='bx bxl-linkedin' ></i></a>
             </div>
-        </div>
-        <div class="img-home">
-            <img src="img/foto-jhan.png" alt="">
+        </div>  
+    </section>
+    <section class="about" id="about">
+        <div class="about-main">
+            <div class="about-logo">
+                <img src="img/j.png" alt="logo">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <h3>Estoy aqui para programar tus sueños</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum neque vero enim exercitationem sunt, error repellendus aut molestiae. Omnis itaque odio, quod iste iusto quos veritatis? Maiores.</p>
+            </div>
         </div>
     </section>
-    <section class="about">
-        
+    <section class="service" id="service">
+        <div class="service-main">
+            <h2>
+                SERVICIOS
+            </h2>
+            <div class="service-content">
+
+            </div>
+
+        </div>
+
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

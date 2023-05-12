@@ -18,7 +18,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 5%;
+    padding: 20px 10%;
     background: #081b29;
     display: flex;
     justify-content: space-between;
@@ -26,14 +26,12 @@ body{
     z-index: 100;
 }
 
-
 .header .logo{
     position: relative;
-    font-size: 1em;
+    font-size: 1.5em;
     color: #ededed;
     text-decoration: none;
     font-weight: 600;
-    width: 50%;
 }
 
 .header .logo::before{
@@ -48,49 +46,14 @@ body{
     animation-delay: 1.5s;
 }
 
-.header #menu{
-    display: block;
-    font-size: 1.5em;
-}
-
-.header .navbar{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 1em 3%;
-    display: none;
-}
-
-.header .navbar.active{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    text-align: center;
-    background: #1a2a35;
-    height: 100vh;
-    
-}
-
 .header .navbar a{
-    display: block;
-    background: #1a2a35;
-    font-size: 1em;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 500;
-    margin: 3rem 0;
-    transition: .5s;
-
-}
-/* .header .navbar a{
     font-size: 1em;
     color: #ededed;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
     transition: .5s;
-} */
+}
 
 .header .navbar a:hover,
 .header .navbar a.active    {
@@ -98,12 +61,12 @@ body{
 }
 
 .home{
+    
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     height: 100vh;
     padding: 0 10%;
-    width: 100%;
 }
 
 .home .home-wrapper{
@@ -111,7 +74,7 @@ body{
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
-    width: 100%;
+    width: 50%;
 }
 
 .home .home-content{
@@ -119,9 +82,8 @@ body{
 }
 
 .home .home-wrapper .home-content h1{
-    text-align: center;
     position: relative;
-    font-size: 1em;
+    font-size: 2.5em;
     font-weight: 700;
     line-height: 3;
 }
@@ -140,8 +102,7 @@ body{
 
 .home .home-wrapper .home-content h3{
     position: relative;
-    text-align: center;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 700;
     color: #00abf0;
 }
@@ -160,8 +121,7 @@ body{
 
 .home .home-wrapper .home-content p{
     position: relative;
-    text-align: justify;
-    font-size: 0.8em;
+    font-size: 16px;
     margin: 20px 0 40px ;
 }
 
@@ -181,9 +141,9 @@ body{
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 30px;
-    
+    width: 345px;
+    height: 40px;
+    margin-top: 20px;
 }
 
 .home .home-wrapper .btn-box::before{
@@ -204,12 +164,12 @@ body{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 150px;
     height: 100%;
     background: #00abf0;
     border: 2px solid #00abf0;
     border-radius: 8px;
-    font-size: 0.8em;
+    font-size: 19px;
     color: #081b29;
     text-decoration: none;
     font-weight: 600;
@@ -256,10 +216,9 @@ body{
 .home .home-sci{
     position: relative;
     margin-top: 10%;
-    width: 100%;
+    width: 25%;
     display: flex;
-    justify-content: space-between; 
-    padding: 0 2em; 
+    justify-content: space-between;  
 }
 
 .home .home-wrapper .home-sci::before{
@@ -315,7 +274,7 @@ body{
 
 .home .home-img{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     flex-grow: 1;
     transition: 2s;
@@ -334,10 +293,11 @@ body{
 }
 
 .home .home-img img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 2px solid white;
+
 }
 
 .home .home-img img:hover{
@@ -358,7 +318,7 @@ body{
 
 .about .about-main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
 }
 .about .about-main .about-logo{
@@ -370,8 +330,8 @@ body{
 }
 
 .about .about-main .about-logo img{
-   width: 125px;
-   height: 125px;
+   width: 250px;
+   height: 250px;
    border-radius: 50%;
 }
 
