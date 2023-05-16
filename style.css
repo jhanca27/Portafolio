@@ -446,7 +446,13 @@ body {
     border-radius: 1em;
     text-align: center;
     border: .1em solid white;
+    transition: .5s ease;
 
+}
+
+.skill .skill-main .skill-content .skill-box:hover{
+  border: #00abf0 solid;
+  transform: scale(1.02);
 }
 
 @keyframes showRight {
