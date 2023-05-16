@@ -27,4 +27,9 @@ window.onscroll = () => {
             });
         };
     });
+    /* remove toggle  icon and navbar */
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
 };
+
+
