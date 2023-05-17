@@ -450,6 +450,127 @@ body {
   transform: scale(1.02);
 }
 
+.portafolio {
+  background: white;
+  height: 100vh;
+  padding: 0 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portafolio h2 {
+  position: relative;
+  top: 30px;
+  color: #00abf0;
+  font-weight: 700;
+  font-size: 3em;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ .portafolio  .container i{
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+ }
+
+.portafolio  .container i:nth-of-type(2){
+    justify-self: end;
+}
+.portafolio  .container {
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.portafolio  .slider-container {
+  display: grid;
+  grid-template-columns: 25px 1fr 25px;
+  align-items: center;
+}
+
+.portafolio  .slider-container .portafolio-container {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.portafolio  .slider-container .show {
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.portafolio  .container .portafolio-container .portafolio-box {
+  position: relative;
+  border-radius: 1em;
+  box-shadow: 0 0 0.5em black;
+  overflow: hidden;
+  display: flex;
+}
+
+.portafolio  .container .portafolio-container .portafolio-box img {
+  width: 100%;
+  opacity: 1;
+    
+}
+
+.portafolio  .container .portafolio-container .portafolio-box .portafolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #081b29;
+  text-align: center;
+  background: linear-gradient(rgba(254,254,254,.5), white);
+}
+
+.portafolio
+
+  .container
+  .portafolio-container
+  .portafolio-box
+  .portafolio-layer
+  h4 {
+  font-size: 2em;
+}
+
+.portafolio
+
+  .container
+  .portafolio-container
+  .portafolio-box
+  .portafolio-layer
+  a {
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.portafolio
+
+  .container
+  .portafolio-container
+  .portafolio-box
+  .portafolio-layer
+  a
+  i {
+  font-size: 1em;
+  color: black;
+}
+
 @keyframes showRight {
   from {
     width: 100%;
