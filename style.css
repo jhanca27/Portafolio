@@ -76,7 +76,7 @@ body {
   color: #ededed;
   text-decoration: none;
   font-weight: 500;
-  margin: 3rem 0;
+  margin: 2rem 0;
   transition: 0.5s;
 }
 /* .header .navbar a{
@@ -600,8 +600,8 @@ body {
   width: 100%;
 }
 
-.contact form .input-box input,
-.contact form textarea{
+.contact form .input-box input
+{
   width: 100%;
   padding: 2px;
   font-size: 1em;
@@ -610,6 +610,17 @@ body {
   border: 1px solid white;
   border-radius: 15px;
   text-align: center;
+}
+
+.contact form textarea{
+  width: 100%;
+  padding: 8px;
+  font-size: 1em;
+  color: white;
+  background: #1a2a35;
+  border: 1px solid white;
+  border-radius: 15px;
+  text-align: start;
 }
 
 .contact form .btn{
@@ -675,7 +686,7 @@ body {
 
 @media (min-width: 720px) {
   .header .logo{
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .header #menu {
@@ -683,30 +694,38 @@ body {
   }
 
   .header .navbar a {
-    font-size: 2em;
+    font-size: 1em;
+  }
+
+  .home{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .home .home-wrapper{
+    justify-content: center;
+    gap:50px;
   }
 
   .home .home-img{
     flex-grow: 2;
     top: 50px;
     align-items: center;
-  }
-
-  .home .home-wrapper{
-    justify-content: space-between;
+    top: 0;
   }
   .home .home-img img {
     width: 220px;
-    height: 300px;
+    height: 250px;
     border-radius: 0;
   }
 
   .home .home-wrapper .home-content h1 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
    
   .home .home-wrapper .home-content h3{
-    font-size: 1.8em;
+    font-size: 1.3em;
   }
 
   .home .home-wrapper .home-content p{
@@ -733,8 +752,8 @@ body {
   }
   
   .about .about-main .about-logo img {
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
   }
 
@@ -745,21 +764,27 @@ body {
   }
 
   .about .about-main .about-content h2{
-    font-size: 2.6em;
+    font-size: 2.2em;
   }
 
   .about .about-main .about-content h3{
-    font-size: 2em;
+    font-size: 1.6em;
   }
 
   .about .about-main .about-content p{
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
-  .skill .skill-main h2 {
-    top: 50px;
-    flex-grow: 3;
-    font-size: 2.5em;
+  .skill .skill-main h2{
+    flex-grow: 1;
+    font-size: 2em;
+  }
+
+  .skill .skill-main .skill-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    flex-grow: 2;
   }
 
 
@@ -777,7 +802,7 @@ body {
 
   .portafolio h2 {
     
-    font-size: 4em;
+    font-size: 2.5em;
     flex-grow: 0.5;
   }
 
@@ -822,20 +847,23 @@ body {
   }
 
   .contact h2{
-    font-size: 3em;
+    font-size: 2em;
   }
 
-  .contact form .input-box input, 
-  .contact form textarea{
-    font-size: 1.7em;
+  .contact form .input-box input {
+    font-size: 1em;
     border: 2px solid white;
+  }
+
+  .contact form textarea{
+    font-size: .8em;
   }
 
   .contact form .btn{
-    width: 300px;
+    width: 250px;
     border: 2px solid white;
-    height: 50px;
-    font-size: 1.5em;
+    height: 40px;
+    font-size: 1em;
   }
 
   .footer .footer-text p{
@@ -895,7 +923,7 @@ body {
   }
 
   .home .home-wrapper .home-content p{
-    font-size: .7em;
+    font-size: 1em;
     font-weight: 500  ;
   }
 
@@ -951,13 +979,6 @@ body {
     font-size: 2em;
   }
 
-  .skill .skill-main .skill-content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    flex-grow: 1;
-  }
-
   .skill .skill-main .skill-content i {
     font-size: 1.1em;
   }
@@ -977,18 +998,19 @@ body {
   .portafolio .slider-container{
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(3,1fr)
+    grid-template-columns: repeat(3,1fr);
+    padding: 0 5px;
   }
-  .portafolio .container i{
+  .portafolio .container i {
     display: none;
+    cursor: pointer;
   }
 
   .portafolio .slider-container .portafolio-container{
     opacity: 1;
     grid-column: auto;
     grid-row: auto;
-    
-    
+    pointer-events: unset; 
   }
 
   .portafolio
@@ -997,7 +1019,7 @@ body {
   .portafolio-box
   .portafolio-layer
   h4 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .portafolio
@@ -1006,8 +1028,9 @@ body {
   .portafolio-box
   .portafolio-layer
   p {
-    font-size: 1em;
+    font-size: .8em;
   }
+
 
   .portafolio
   .container
@@ -1017,5 +1040,28 @@ body {
   a
   i {
     font-size: .5em;
+    display: flex;
+    font-size: 1.5em;
+    
+  }
+
+  .contact h2{
+    font-size: 2.5em;
+  }
+
+  .contact form .input-box input{
+    font-size: 1em;
+    border: 2px solid white;
+  }
+
+   .contact form textarea{
+    font-size: .8em;
+   }
+
+  .contact form .btn{
+    width: 250px;
+    border: 2px solid white;
+    height: 40px;
+    font-size: 1.2em;
   }
 }
