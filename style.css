@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Sigmar:wght@300;400;500;600;700;800;900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +30,7 @@ body {
   font-size: 1.5em;
   color: #ededed;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   width: 50%;
 }
 
@@ -621,6 +621,36 @@ body {
   height: 30px;
 }
 
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 10%;
+    background: #1a2a35;
+}
+
+.footer .footer-text p{
+    font-size: .8em;
+}
+
+.footer .footer-iconTop{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #00abf0;
+    
+}
+
+.footer .footer-iconTop a{
+    text-decoration: none;
+}
+
+.footer .footer-iconTop a i{
+    font-size: 30px;
+    color: #ededed;
+    
+}
+
 @keyframes showRight {
   from {
     width: 100%;
@@ -640,4 +670,8 @@ body {
   100% {
     transform: scaleX(0);
   }
+}
+
+@media (min-width: 780px) {
+    
 }
