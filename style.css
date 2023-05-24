@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Sigmar:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair:wght@300;400;500;600;700;800;900&family=Rubik:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sigmar:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair:wght@300;400;500;600;700;800;900&family=Rubik:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +13,9 @@ body {
   color: #ededed;
 }
 
-h1,h2{
-  font-family: 'sigmar';
+h1,
+h2 {
+  font-family: "sigmar";
 }
 
 .header {
@@ -37,7 +38,7 @@ h1,h2{
   text-decoration: none;
   font-weight: 400;
   width: 50%;
-  font-family: 'sigmar';
+  font-family: "sigmar";
 }
 
 .header .logo::before {
@@ -68,7 +69,7 @@ h1,h2{
 
 .header .navbar.active {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   text-align: center;
   background: #1a2a35;
@@ -441,7 +442,6 @@ h1,h2{
 .skill .skill-main .skill-content p {
   text-align: center;
   font-size: 0.9em;
-  
 }
 
 .skill .skill-main .skill-content .skill-box {
@@ -479,41 +479,42 @@ h1,h2{
   flex-direction: column;
   justify-content: center;
 }
- .portafolio  .container i{
-    font-size: 1.5em;
-    color: black;
-    cursor: pointer;
- }
-
-.portafolio  .container i:nth-of-type(2){
-    justify-self: end;
+.portafolio .container i {
+  font-size: 1.5em;
+  color: black;
+  cursor: pointer;
 }
-.portafolio  .container {
+
+.portafolio .container i:nth-of-type(2) {
+  justify-self: end;
+}
+.portafolio .container {
   overflow: hidden;
   flex-grow: 1;
 }
 
-.portafolio  .slider-container {
+.portafolio .slider-container {
   display: grid;
   grid-template-columns: 25px 1fr 25px;
   align-items: center;
   align-content: space-between;
   margin-top: 20px;
+  padding-top: 5px;
 }
 
-.portafolio  .slider-container .portafolio-container {
+.portafolio .slider-container .portafolio-container {
   grid-column: 2/3;
   grid-row: 1/2;
   opacity: 0;
   pointer-events: none;
 }
 
-.portafolio  .slider-container .show {
+.portafolio .slider-container .show {
   opacity: 1;
   pointer-events: unset;
 }
 
-.portafolio  .container .portafolio-container .portafolio-box {
+.portafolio .container .portafolio-container .portafolio-box {
   position: relative;
   border-radius: 1em;
   box-shadow: 0 0 0.5em black;
@@ -521,13 +522,12 @@ h1,h2{
   display: flex;
 }
 
-.portafolio  .container .portafolio-container .portafolio-box img {
+.portafolio .container .portafolio-container .portafolio-box img {
   width: 100%;
   opacity: 1;
-    
 }
 
-.portafolio  .container .portafolio-container .portafolio-box .portafolio-layer {
+.portafolio .container .portafolio-container .portafolio-box .portafolio-layer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -539,7 +539,7 @@ h1,h2{
   flex-direction: column;
   color: #081b29;
   text-align: center;
-  background: linear-gradient(rgba(254,254,254,.5), white);
+  background: linear-gradient(rgba(254, 254, 254, 0.5), white);
 }
 
 .portafolio
@@ -578,22 +578,22 @@ h1,h2{
   color: black;
 }
 
-.contact{
+.contact {
   background: #081b29;
   height: 100vh;
   padding: 0 10%;
   width: 100%;
   display: grid;
-  grid-template-rows: .2fr 1fr;
+  grid-template-rows: 0.2fr 1fr;
 }
 
-.contact h2{
+.contact h2 {
   text-align: center;
   position: relative;
   align-self: end;
 }
 
-.contact form{
+.contact form {
   margin-top: 20px;
   text-align: center;
   display: flex;
@@ -610,8 +610,7 @@ h1,h2{
   width: 100%;
 }
 
-.contact form .input-box input
-{
+.contact form .input-box input {
   width: 100%;
   padding: 2px;
   font-size: 1em;
@@ -622,7 +621,7 @@ h1,h2{
   text-align: center;
 }
 
-.contact form textarea{
+.contact form textarea {
   width: 100%;
   padding: 8px;
   font-size: 1em;
@@ -633,7 +632,7 @@ h1,h2{
   text-align: start;
 }
 
-.contact form .btn{
+.contact form .btn {
   width: 200px;
   background: #00abf0;
   border: 1.5px solid white;
@@ -643,34 +642,33 @@ h1,h2{
   cursor: pointer;
 }
 
-.footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 10%;
-    background: #1a2a35;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 10%;
+  background: #1a2a35;
 }
 
-.footer .footer-text p{
-    font-size: .8em;
+.footer .footer-text p {
+  font-size: 0.8em;
 }
 
-.footer .footer-iconTop{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background: #00abf0;
-    
+.footer .footer-iconTop {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #00abf0;
 }
 
-.footer .footer-iconTop a{
-    text-decoration: none;
-    display: flex;
+.footer .footer-iconTop a {
+  text-decoration: none;
+  display: flex;
 }
 
-.footer .footer-iconTop a i{
-    font-size: 30px;
-    color: #ededed;   
+.footer .footer-iconTop a i {
+  font-size: 30px;
+  color: #ededed;
 }
 
 @keyframes showRight {
@@ -695,7 +693,7 @@ h1,h2{
 }
 
 @media (min-width: 720px) {
-  .header .logo{
+  .header .logo {
     font-size: 2em;
   }
 
@@ -707,18 +705,18 @@ h1,h2{
     font-size: 1em;
   }
 
-  .home{
+  .home {
     display: flex;
     flex-direction: row;
     gap: 30px;
   }
 
-  .home .home-wrapper{
+  .home .home-wrapper {
     justify-content: center;
-    gap:50px;
+    gap: 50px;
   }
 
-  .home .home-img{
+  .home .home-img {
     flex-grow: 2;
     top: 50px;
     align-items: center;
@@ -733,14 +731,14 @@ h1,h2{
   .home .home-wrapper .home-content h1 {
     font-size: 2em;
   }
-   
-  .home .home-wrapper .home-content h3{
+
+  .home .home-wrapper .home-content h3 {
     font-size: 1.3em;
   }
 
-  .home .home-wrapper .home-content p{
+  .home .home-wrapper .home-content p {
     font-size: 1em;
-    font-weight: 500  ;
+    font-weight: 500;
   }
 
   .home .home-wrapper .btn-box {
@@ -758,9 +756,8 @@ h1,h2{
   }
 
   .about .about-main .about-logo {
-    
   }
-  
+
   .about .about-main .about-logo img {
     width: 180px;
     height: 180px;
@@ -773,30 +770,29 @@ h1,h2{
     padding-bottom: 0;
   }
 
-  .about .about-main .about-content h2{
+  .about .about-main .about-content h2 {
     font-size: 2.2em;
   }
 
-  .about .about-main .about-content h3{
+  .about .about-main .about-content h3 {
     font-size: 1.6em;
   }
 
-  .about .about-main .about-content p{
+  .about .about-main .about-content p {
     font-size: 1em;
   }
 
-  .skill .skill-main h2{
+  .skill .skill-main h2 {
     flex-grow: 1;
     font-size: 2em;
   }
 
-  .skill .skill-main .skill-content{
+  .skill .skill-main .skill-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     flex-grow: 2;
   }
-
 
   .skill .skill-main .skill-content i {
     font-size: 1.3em;
@@ -811,52 +807,55 @@ h1,h2{
   }
 
   .portafolio h2 {
-    
     font-size: 2.5em;
     flex-grow: 0.5;
   }
 
-  .portafolio  .slider-container {
+  .portafolio .slider-container {
     grid-template-columns: 50px 1fr 50px;
   }
-  
-  .portafolio  .container i{
+
+  .portafolio .container i {
     font-size: 3em;
   }
 
-  .portafolio .container .portafolio-container .portafolio-box .portafolio-layer{
+  .portafolio
+    .container
+    .portafolio-container
+    .portafolio-box
+    .portafolio-layer {
     justify-content: space-evenly;
   }
 
   .portafolio
-  .container
-  .portafolio-container
-  .portafolio-box
-  .portafolio-layer
-  h4 {
+    .container
+    .portafolio-container
+    .portafolio-box
+    .portafolio-layer
+    h4 {
     font-size: 3em;
   }
 
   .portafolio
-  .container
-  .portafolio-container
-  .portafolio-box
-  .portafolio-layer
-  p {
+    .container
+    .portafolio-container
+    .portafolio-box
+    .portafolio-layer
+    p {
     font-size: 1.5em;
   }
 
   .portafolio
-  .container
-  .portafolio-container
-  .portafolio-box
-  .portafolio-layer
-  a
-  i {
+    .container
+    .portafolio-container
+    .portafolio-box
+    .portafolio-layer
+    a
+    i {
     font-size: 2em;
   }
 
-  .contact h2{
+  .contact h2 {
     font-size: 2em;
   }
 
@@ -865,29 +864,28 @@ h1,h2{
     border: 2px solid white;
   }
 
-  .contact form textarea{
-    font-size: .8em;
+  .contact form textarea {
+    font-size: 0.8em;
   }
 
-  .contact form .btn{
+  .contact form .btn {
     width: 250px;
     border: 2px solid white;
     height: 40px;
     font-size: 1em;
   }
 
-  .footer .footer-text p{
+  .footer .footer-text p {
     font-size: 1em;
   }
 
-  .footer .footer-iconTop a i{
-    font-size: 40px; 
+  .footer .footer-iconTop a i {
+    font-size: 40px;
   }
-
 }
 
 @media (min-width: 1000px) {
-  .header .logo{
+  .header .logo {
     font-size: 1.6em;
   }
 
@@ -905,36 +903,34 @@ h1,h2{
   .header .navbar a {
     margin: 0;
     background: #081b29;
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
-  .home{
+  .home {
     flex-direction: row;
     gap: 40px;
   }
 
-  .home .home-img{
+  .home .home-img {
     top: 0;
   }
 
-  .home .home-wrapper{
+  .home .home-wrapper {
     justify-content: center;
     gap: 50px;
   }
 
- 
-
   .home .home-wrapper .home-content h1 {
     font-size: 2.2em;
   }
-   
-  .home .home-wrapper .home-content h3{
+
+  .home .home-wrapper .home-content h3 {
     font-size: 1.5em;
   }
 
-  .home .home-wrapper .home-content p{
+  .home .home-wrapper .home-content p {
     font-size: 1em;
-    font-weight: 500  ;
+    font-weight: 500;
   }
 
   .home .home-wrapper .btn-box {
@@ -947,7 +943,7 @@ h1,h2{
     width: 200px;
   }
 
-  .home .home-sci{
+  .home .home-sci {
     margin-bottom: 0;
     padding: 0 3em;
   }
@@ -958,12 +954,12 @@ h1,h2{
     font-size: 1.2em;
   }
 
-  .about .about-main{
+  .about .about-main {
     flex-direction: row;
-    gap: 50px
+    gap: 50px;
   }
 
-  .about .about-main .about-logo{
+  .about .about-main .about-logo {
     height: 100%;
   }
 
@@ -971,19 +967,19 @@ h1,h2{
     gap: 1em;
   }
 
-  .about .about-main .about-content h2{
+  .about .about-main .about-content h2 {
     font-size: 2.2em;
   }
 
-  .about .about-main .about-content h3{
+  .about .about-main .about-content h3 {
     font-size: 1.6em;
   }
 
-  .about .about-main .about-content p{
+  .about .about-main .about-content p {
     font-size: 1.2em;
   }
 
-  .skill .skill-main h2{
+  .skill .skill-main h2 {
     flex-grow: 1;
     top: 0;
     font-size: 2em;
@@ -1001,76 +997,75 @@ h1,h2{
     font-size: 1.4em;
   }
 
-  .portafolio h2{
+  .portafolio h2 {
     font-size: 2em;
   }
 
-  .portafolio .slider-container{
+  .portafolio .slider-container {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 0 5px;
     align-items: start;
     margin-top: 4em;
+    padding-top: 10px;
   }
   .portafolio .container i {
     display: none;
     cursor: pointer;
   }
 
-  .portafolio .slider-container .portafolio-container{
+  .portafolio .slider-container .portafolio-container {
     opacity: 1;
     grid-column: auto;
     grid-row: auto;
-    pointer-events: unset; 
+    pointer-events: unset;
   }
 
   .portafolio
-  .container
-  .portafolio-container
-  .portafolio-box
-  .portafolio-layer
-  h4 {
+    .container
+    .portafolio-container
+    .portafolio-box
+    .portafolio-layer
+    h4 {
     font-size: 2em;
   }
 
   .portafolio
-  .container
-  .portafolio-container
-  .portafolio-box
-  .portafolio-layer
-  p {
-    font-size: .8em;
+    .container
+    .portafolio-container
+    .portafolio-box
+    .portafolio-layer
+    p {
+    font-size: 0.8em;
   }
-
 
   .portafolio
-  .container
-  .portafolio-container
-  .portafolio-box
-  .portafolio-layer
-  a
-  i {
-    font-size: .5em;
+    .container
+    .portafolio-container
+    .portafolio-box
+    .portafolio-layer
+    a
+    i {
+    font-size: 0.5em;
     display: flex;
     font-size: 1.5em;
-    
   }
 
-  .contact h2{
+  .contact h2 {
     font-size: 2.5em;
   }
 
-  .contact form .input-box input{
+  .contact form .input-box input {
     font-size: 1em;
     border: 2px solid white;
   }
 
-   .contact form textarea{
-    font-size: .8em;
-   }
+  .contact form textarea {
+    font-size: 0.8em;
+  }
 
-  .contact form .btn{
+  .contact form .btn {
     width: 250px;
     border: 2px solid white;
     height: 40px;
