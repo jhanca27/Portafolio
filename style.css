@@ -199,7 +199,7 @@ h2 {
 .home .home-wrapper .home-content p {
   position: relative;
   text-align: justify;
-  font-size: 0.8em;
+  font-size: 1em;
   margin: 20px 0 0;
 }
 
@@ -401,7 +401,7 @@ h2 {
   color: #081b29;
   font-weight: 600;
   text-align: justify;
-  font-size: 15px;
+  font-size: 1em;
 }
 
 .skill {
