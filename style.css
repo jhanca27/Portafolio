@@ -73,6 +73,7 @@ h1,h2{
   text-align: center;
   background: #1a2a35;
   height: 95vh;
+  overflow-y: scroll;
 }
 
 .header .navbar a {
@@ -496,6 +497,8 @@ h1,h2{
   display: grid;
   grid-template-columns: 25px 1fr 25px;
   align-items: center;
+  align-content: space-between;
+  margin-top: 20px;
 }
 
 .portafolio  .slider-container .portafolio-container {
