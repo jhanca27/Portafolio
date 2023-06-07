@@ -812,7 +812,7 @@ h2 {
   }
 
   .portafolio .slider-container {
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: 50px 450px 50px;
   }
 
   .portafolio .container i {
@@ -1009,6 +1009,7 @@ h2 {
     align-items: start;
     margin-top: 4em;
     padding-top: 10px;
+    align-content: space-evenly;
   }
   .portafolio .container i {
     display: none;
@@ -1021,6 +1022,10 @@ h2 {
     grid-row: auto;
     pointer-events: unset;
   }
+
+   .portafolio .slider-container .location{
+    grid-column: 2;
+   }
 
   .portafolio
     .container
